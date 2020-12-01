@@ -20,11 +20,11 @@ public class Ellipse extends Figure {
     public double calculatePerimeter() {
         return Math.PI * (3.0 * (side1 + side2) - Math.sqrt((3.0 * side1 + side2) * (side1 + 3.0 * side2)));
     }
-
+    @Override
     public double calculateArea() {
         return Math.PI * side1 * side2;
     }
-
+    @Override
     public String getType() {
         return (side1 == side2) ? "Circle" : "Ellipse";
     }
